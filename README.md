@@ -15,9 +15,12 @@ This can be used to identify:
  -  potential attack surface from legacy libraries in packaged application bundles
  - suspicious applications and libraries that contain Microsoft version metadata that doesn't match the actual version of the host system.
 
-The default config considers NT 5.0 and 6.x (i.e. Win2K through Windows 8.1) to be suspect (if checking for a modern Windows 10 host).
+The default pattern regex identifies NT 5.0 and 6.x (i.e. Win2K through Windows 8.1) version metadata (checking on a modern Windows 10 host, this should yield suspect versions).
 
 #### License
+
+The rule(s) may be used internally. Modifications must be released under terms of GPLv3
+
 ```
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -32,5 +35,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
-
-The rule(s) may be used internally. Modifications must be released under terms of GPLv3
